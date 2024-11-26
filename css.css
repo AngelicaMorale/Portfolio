@@ -311,22 +311,21 @@ body {
     .Anim4 {
       position: absolute; /* Independencia de otros elementos */
       top: 130px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-      left: 30%;          /* Centra horizontalmente */
-      transform: translateX(-50%); /* Ajusta al centro exacto */
+      left: 385px;          /* Centra horizontalmente */
       z-index: 1;         /* Aparece detrás de .titleP */
       opacity: 0.8;       /* Opcional: transparencia */
-      animation: slideAnimation3 60s ease-in-out infinite;
+      animation: slideAnimation4 30s ease-in-out infinite;
       max-width: 10%;
       
     }
     
     
        /* Define la animación con @keyframes */
-       @keyframes slideAnimation3 {
+       @keyframes slideAnimation4 {
         0% {
           opacity: 0; /* Empieza invisible */
         }
-        5% {
+        50% {
           opacity: 0.9; /* Aparece parcialmente */
         }
         10% {
@@ -369,7 +368,7 @@ body {
 .imagen-container {
   width: 300px;
   height: 200px;
-  left: 900px;
+  left: 1000px;
   position: relative;
   overflow: hidden; /* Oculta las imágenes fuera del contenedor */
   z-index: 1;         /* Aparece detrás de .titleP */
@@ -379,11 +378,11 @@ body {
 .imagen {
   position: absolute;
   top: 100px;
-  width: 30%;
-  height: 30%;
+  width: 27%;
+  height: 27%;
   object-fit: contain;
   opacity: 0; /* Comienza oculta */
-  animation: cambio-imagen 3s infinite; /* Animación de 6 segundos, se repite infinitamente */
+  animation: cambio-imagen 3s infinite; /* Animación de 3 segundos, se repite infinitamente */
 }
 
 /* Definir la animación con @keyframes */
@@ -398,8 +397,97 @@ body {
 
 /* Especificar un retraso para la segunda imagen */
 .imagen:nth-child(2) {
-  animation-delay: 0.5s; /* La segunda imagen se muestra después de 3 segundos */
+  animation-delay: 5s; /* La segunda imagen se muestra después de 3 segundos */
 }
+
+
+.Anim5 {
+  position: absolute; /* Independencia de otros elementos */
+  top: 160px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 560px;          /* Centra horizontalmente */
+  z-index: 1;         /* Aparece detrás de .titleP */
+  max-width: 28%;
+  height: 2px;
+  
+}
+
+
+.Anim6 {
+  position: absolute; /* Independencia de otros elementos */
+  top: 150px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 60%;          /* Centra horizontalmente */
+  z-index: 1;         /* Aparece detrás de .titleP */
+  opacity: 0.8;       /* Opcional: transparencia */
+  animation: slideAnimation6 20s ease-in-out infinite;
+  max-width: 6%;
+  
+}
+
+
+   /* Define la animación con @keyframes */
+   @keyframes moveLeftRight {
+    0% {
+      transform: translateX(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateX(-335px); /* Mover a la izquierda */
+    }
+    100% {
+      transform: translateX(0); /* Regresar a la posición original */
+    }
+  }
+  
+  .Anim6 {
+    animation: moveLeftRight 50s ease-in-out infinite; /* Animación continua */
+  }
+
+  .Anim7 {
+    position: absolute; /* Independencia de otros elementos */
+    top: 130px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+    left: 72.8%;          /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta al centro exacto */
+    z-index: 2;         /* Aparece detrás de .titleP */
+    animation: slideAnimation7 4s ease-in-out infinite;
+    max-width: 10%;
+    
+  }
+  
+  
+     /* Define la animación con @keyframes */
+     @keyframes slideAnimation2 {
+      0% {
+        transform: translateX(-10px); /* Comienza desplazándose hacia la izquierda */
+        opacity: 0; /* Empieza invisible */
+      }
+      50% {
+        transform: translateX(50px); /* Desplazamiento hacia la derecha */
+        opacity: 0.8; /* Aparece parcialmente */
+      }
+      100% {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 1; /* Totalmente visible */
+      }
+    }
+  
+
+    .Anim8 {
+      position: absolute; /* Independencia de otros elementos */
+      top: 225px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 34.3%;          /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta al centro exacto */
+      z-index: 1;         /* Aparece detrás de .titleP */
+      opacity: 0.8;       /* Opcional: transparencia */
+      /*animation: slideAnimation2 8s ease-in-out infinite; */
+      max-width: 2.5%;
+      
+    }
+  
+    p
+    {
+      color: var(--font-titles);
+    
+      
+    }
 
     
     
