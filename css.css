@@ -32,7 +32,8 @@
     
     /* Typography */
     --titles-size-header: 16px;
-    --titles-size-footer: 24px;
+    --titles-size-footer: 20px;
+    --titles-size-footer-rol: 16px;
     --font-size-heading: 24px;
 
 
@@ -507,9 +508,12 @@ body {
 footer
 {
   background-color: var(--color-header);
-  margin-top: 17%;
+  margin-top: 15.9%;
   width: 100%;
-  height: 5em;
+  height: 6em;
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Centra verticalmente los divs */
+  justify-content: space-between; /* Espacio entre los divs */
   
 }
 
@@ -519,12 +523,21 @@ footer
   font-family: 'Aileron Bold';
   font-weight: bold;
   font-size: var(--titles-size-footer);
+  height: 16px;
+}
+
+#rol_footer
+{
+  color: var(--background-color);
+  font-family: 'Aileron Regular';
+  font-weight: normal;
+  font-size: var(--titles-size-footer-rol);
 }
 
 .title
 {
-  margin-right: 30%;
-  border-left: 40px solid #000; /* Borde izquierdo */
-  padding-left: 10px; /* Espacio interno después del borde */
-  margin-right: 20px; /* Espacio a la derecha */
+  padding-left: 2em; /* Espacio interno después del borde */
+  padding-top: 0.5em;
+  
+  
 }
