@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Aileron SemiBold';
+    src: url('./Fonts/Aileron-SemiBold.otf') format(otf);
+    font-weight: SemiBold;
+}
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url(./Fonts/Aileron-Bold.otf); 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Aileron Regular';
+  src: url(./Fonts/Aileron-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Tan';
+  src: url(./Fonts/TAN\ -\ Angleton\ Regular.ttf);
+}
+
+
+:root{
+    /* Color scheme */
+    --background-color:#E7E7DF;
+    --font-titles: #A430DA;
+    --font-black-titles: #000000;
+    --color-header: #7509A7;
+
+    
+    /* Typography */
+    --titles-size-header: 16px;
+    --titles-size-footer: 20px;
+    --titles-size-footer-rol: 16px;
+    --font-size-heading: 24px;
+
+
+  
+    /* Spacing */
+    --spacing-unit: ;
+
+    /* Transitions */
+    --transition-duration: 0.2s;
+    --scale: 1;
+    --scale-hover: 1.1;
+  }
+
+
+
+/* Estilos básicos de la barra de navegación */
+body {
+    margin: 0;
+    font-size: var(--titles-size-header);
+    font-family: 'Aileron Regular';
+    background-color: var(--background-color);
+  
+   
+  }
+  
+  .navbar {
+    display: flex;
+    background-color: var(--background-color);
+    align-items: center;
+    padding: 20px 16px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    padding: 4px 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a:not(.logo) {
+    color: black; /* Color de fuente negro para todos los enlaces excepto el logo */
+  }
+  
+  /* Estilos de los enlaces de navegación */
+  .nav-links {
+    display: flex;
+    margin-left: auto; /* Empuja los elementos hacia la derecha */
+  }
+  
+.logo
+{
+  color: var(--font-titles);
+  font-family: 'Aileron Bold';
+  font-weight: bold;
+}
+
+.language
+{
+  width: 20px;
+ 
+
+}
+
+#resume
+{
+  border: 1px solid var(--font-titles);
+  border-radius: 25px;
+}
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  justify-content: space-between;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ /* Clase para mostrar el menú desplegable */
+ .show {
+  display: flex;
+}
+
+/* Contenedor del switch */
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Ocultar el checkbox original */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Estilos del slider */
+.toggle-slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.toggle-slider:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Estado cuando está activado */
+.toggle-checkbox:checked + .toggle-slider {
+  background-color: #4CAF50;
+}
+
+.toggle-checkbox:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+
+  /* Para que el navbar siempre esté visible en todas las pantallas */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: row;
+    }
+  }
+  

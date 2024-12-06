@@ -508,12 +508,13 @@ body {
 footer
 {
   background-color: var(--color-header);
-  margin-top: 15.9%;
+  margin-top: 20em;
   width: 100%;
-  height: 6em;
+  height: 7em;
   display: flex; /* Activa Flexbox */
   align-items: center; /* Centra verticalmente los divs */
-  justify-content: space-between; /* Espacio entre los divs */
+  gap: 5em;
+  /*justify-content: space-between; /* Espacio entre los divs */
   
 }
 
@@ -540,4 +541,36 @@ footer
   padding-top: 0.5em;
   
   
+}
+
+.location_one {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+
+}
+
+.icon {
+ max-width: 10%;
+  margin-right: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+.location_two {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+
+.socials_one {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.icon2 {
+ max-width: 6%;
+  margin-right: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+.socials_two {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
 }
