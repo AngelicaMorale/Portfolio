@@ -219,13 +219,7 @@ body {
     position: relative; /* Necesario para posicionar absolutamente las imágenes dentro */
   }
   
-  .me_image {
-    max-width: 20em; /* Limitar el tamaño máximo de la imagen */
-    
-    padding-top: 0.1em;
-    padding-left: 42em;
-    
-  }
+  
   
   .anim_ab1 {
     position: absolute; /* Posicionar la imagen detrás del contenido */
@@ -272,3 +266,92 @@ body {
     padding-top: 2em;
     padding-left: 56em;
   }
+
+
+
+
+
+
+
+
+
+  .grid-container {
+    display: grid; /* Activar el sistema de grid */
+    grid-template-columns: repeat(2, 1fr); /* Crear 2 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos del grid */
+    padding-top: 2em;
+    padding-left: 12em;
+    padding-right: 12em;
+
+}
+
+.grid-item {
+
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid var(--color-header); /* Borde de 2px con color gris claro */
+    display: flex; /* Para colocar la imagen y el texto en línea */
+    align-items: center; /* Alineación vertical centrada */
+}
+
+
+.grid-item:hover
+{
+  background-color: #D7D7B5;
+}
+
+.capsule {
+    display: flex; /* Usamos flexbox para que la imagen esté a la izquierda y el texto a la derecha */
+    align-items: center; /* Alineamos verticalmente los elementos */
+}
+
+.capsule-image {
+   max-width: 15em;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    
+}
+
+.capsule-text {
+    display: flex;
+    flex-direction: column; /* Asegura que el título y el subtítulo estén apilados */
+}
+
+.capsule-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Elimina el margen para un mejor ajuste */
+}
+
+.capsule-subtitle {
+    font-size: 14px;
+    color: #777; /* Un color más suave para el subtítulo */
+}
+
+.text_work {
+  font-size: 70px; /* Ajusta el tamaño del título */
+  margin: 0px;
+  font-family: 'Tan Bold';
+  font-weight: normal;
+  color: var(--font-titles);
+  text-align: center;
+  padding-top: 5em;
+}
+
+
+
+
+
+.my-button {
+  color: var(--color-header); /* Color del texto */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  border: 2px solid var(--color-header); /* Borde de 2px con color gris claro */
+  border-radius: 18px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano cuando pasa sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  width: 6em;
+  height: 1.5em; /* Ajusta la altura para que el texto se vea centrado */
+  display: flex; /* Activa el modelo de flexbox */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  margin-top: 0.5em;
+}
