@@ -28,6 +28,7 @@
     --font-titles: #A430DA;
     --font-black-titles: #000000;
     --color-header: #7509A7;
+    --button-color: #7354E3;
 
     
     /* Typography */
@@ -71,12 +72,17 @@ body {
   }
   
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+ 
+    color: var(--button-color);
   }
 
   .navbar a:not(.logo) {
     color: black; /* Color de fuente negro para todos los enlaces excepto el logo */
+  }
+
+  .navbar a:not(.logo):hover
+  {
+    color: var(--font-titles);
   }
   
   /* Estilos de los enlaces de navegación */
@@ -85,6 +91,12 @@ body {
     margin-left: auto; /* Empuja los elementos hacia la derecha */
   }
   
+  .nav-links:hover {
+    color: var(--color-header);
+  }
+
+
+
 .logo
 {
   color: var(--font-titles);
@@ -108,7 +120,7 @@ body {
 .dropdown {
   position: relative;
   justify-content: space-between;
-}
+   }
 
 .dropdown-toggle {
   display: flex;
