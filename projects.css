@@ -225,96 +225,92 @@ transform: translateX(20px);
 
 
   .container {
-    display: flex; /* Activar flexbox */
-    align-items: center; /* Centrar verticalmente la imagen y el texto */
-    justify-content: flex-start; /* Alinea todo hacia la izquierda */
-    padding-top: 5em; /* Espaciado superior */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5em;
     padding-left: 15em;
     padding-right: 15em;
-    position: relative; /* Necesario para posicionar absolutamente las imágenes dentro */
-  }
-  
-  
-  
-  .image-wrapper {
     position: relative;
-    display: inline-block;
-    cursor: pointer; /* Cambia el cursor a mano al pasar */
-    margin-left: 30em;
-    margin-top:-3em;
-   
 }
 
-.image-wrapper .anim_ab1 {
-    display: block;
-    max-width: 10em;
-    transition: opacity 0.3s ease; /* Suaviza el cambio */
-}
-
-.image-wrapper:hover .anim_ab1 {
-    opacity: 0; /* Oculta la imagen original */
-}
-
-.image-wrapper::after {
-    content: '';
+.anim_ab1, .anim_ab2, .anim_ab3
+ {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('./Img/anim_p2_open..png'); /* Imagen de hover */
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Suaviza el cambio */
-}
-
-.image-wrapper:hover::after {
-    opacity: 1; /* Muestra la nueva imagen */
-}
-
-
-
-
-  .anim_ab2 {
-    position: absolute; /* Posicionar la imagen detrás del contenido */
-    top: 0; /* Asegura que la imagen esté en la parte superior */
-    left: 0; /* Coloca la imagen a la izq */
-    bottom: 0;
-
     max-width: 16em;
-    padding-top: 2em;
-    padding-left: 28em;
-
-  }
-
-  .anim_ab3 {
-    position: absolute; /* Posicionar la imagen detrás del contenido */
-    top: 0; /* Asegura que la imagen esté en la parte superior */
-    left: 0; /* Coloca la imagen a la izq */
-    bottom: 0;
-   
-    max-width: 10em;
-    padding-top: 2em;
-    padding-left: 17em;
-
-  }
-
-  .anim_ab4 {
-    position: absolute; /* Posicionar la imagen detrás del contenido */
-    top: 0; /* Asegura que la imagen esté en la parte superior */
-  left: 0; /* Coloca la imagen a la derecha */
-    bottom: 0;
-
-    max-width: 17em;
-    padding-top: 2em;
-    padding-left: 56em;
-  }
+    transition: opacity 0.5s ease-in-out;
+    animation: none; /* Inicialmente sin animación */
+}
 
 
+ .anim_ab4
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 16em;
+  margin-left: 80em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
 
+/* Animación de cambio de la primera imagen */
+.anim_ab1 {
+    animation: changeImage1 4s infinite; /* Cambia cada 4 segundos */
+}
 
+@keyframes changeImage1 {
+    0%, 50% {
+        content: url('./Img/anim_p2.png'); /* Imagen original */
+    }
+    51%, 100% {
+        content: url('./Img/anim_p2_open.png'); /* Imagen de reemplazo */
+    }
+}
 
+/* Animación de cambio de la segunda imagen */
+.anim_ab2 {
+    animation: changeImage2 5s infinite; /* Cambia cada 5 segundos */
+}
+
+@keyframes changeImage2 {
+    0%, 50% {
+        content: url('./Img/animp_3.png'); /* Imagen original */
+    }
+    51%, 100% {
+        content: url('./Img/animp_3_open.png'); /* Imagen de reemplazo */
+    }
+}
+
+/* Animación de cambio de la tercera imagen */
+.anim_ab3 {
+    animation: changeImage3 6s infinite; /* Cambia cada 6 segundos */
+}
+
+@keyframes changeImage3 {
+    0%, 50% {
+        content: url('./Img/anim_p4.png'); /* Imagen original */
+    }
+    51%, 100% {
+        content: url('./Img/anim_p4_open.png'); /* Imagen de reemplazo */
+    }
+}
+
+/* Animación de cambio de la cuarta imagen */
+.anim_ab4 {
+    animation: changeImage4 7s infinite; /* Cambia cada 7 segundos */
+}
+
+@keyframes changeImage4 {
+    0%, 50% {
+        content: url('./Img/anim_p1.png'); /* Imagen original */
+    }
+    51%, 100% {
+        content: url('./Img/anim_p1_open.png'); /* Imagen de reemplazo */
+    }
+}
 
 
 
