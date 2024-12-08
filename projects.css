@@ -234,13 +234,38 @@ transform: translateX(20px);
     position: relative;
 }
 
-.anim_ab1, .anim_ab2, .anim_ab3
+.anim_ab3
  {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 16em;
+    max-width: 11em;
     transition: opacity 0.5s ease-in-out;
+    animation: none; /* Inicialmente sin animación */
+    margin-left: 14em;
+}
+
+
+.anim_ab2
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 18em;
+    transition: opacity 0.5s ease-in-out;
+    animation: none; /* Inicialmente sin animación */
+    margin-left: 26.7em;
+}
+
+
+.anim_ab1
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 11em;
+    margin-left: 46.5em;
+    transition: opacity 0.2s ease-in-out;
     animation: none; /* Inicialmente sin animación */
 }
 
@@ -250,15 +275,79 @@ transform: translateX(20px);
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 16em;
-  margin-left: 80em;
+  max-width: 18.5em;
+  margin-left: 59em;
   transition: opacity 0.5s ease-in-out;
   animation: none; /* Inicialmente sin animación */
 }
 
+
+.anim_ab5
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 5em;
+  margin-left: 20em;
+  margin-top: 12em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
+
+
+.anim_ab6
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 18em;
+  margin-left: 26.7em;
+  margin-top: 12em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
+
+
+.anim_ab7
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 11.2em;
+  margin-left: 46.5em;
+  margin-top: 12em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
+
+.anim_ab8
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 9em;
+  margin-left: 59em;
+  margin-top: 12em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
+
+.anim_ab9
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 4em;
+  margin-left: 68.8em;
+  margin-top: 12em;
+  transition: opacity 0.5s ease-in-out;
+  animation: none; /* Inicialmente sin animación */
+}
+
+
 /* Animación de cambio de la primera imagen */
 .anim_ab1 {
-    animation: changeImage1 4s infinite; /* Cambia cada 4 segundos */
+    animation: changeImage1 2s infinite; /* Cambia cada 4 segundos */
 }
 
 @keyframes changeImage1 {
@@ -266,13 +355,13 @@ transform: translateX(20px);
         content: url('./Img/anim_p2.png'); /* Imagen original */
     }
     51%, 100% {
-        content: url('./Img/anim_p2_open.png'); /* Imagen de reemplazo */
+        content: url('./Img/anim_p2_open..png'); /* Imagen de reemplazo */
     }
 }
 
 /* Animación de cambio de la segunda imagen */
 .anim_ab2 {
-    animation: changeImage2 5s infinite; /* Cambia cada 5 segundos */
+    animation: changeImage2 2s infinite; /* Cambia cada 5 segundos */
 }
 
 @keyframes changeImage2 {
@@ -280,13 +369,13 @@ transform: translateX(20px);
         content: url('./Img/animp_3.png'); /* Imagen original */
     }
     51%, 100% {
-        content: url('./Img/animp_3_open.png'); /* Imagen de reemplazo */
+        content: url('./Img/anim_p3_open..png'); /* Imagen de reemplazo */
     }
 }
 
 /* Animación de cambio de la tercera imagen */
 .anim_ab3 {
-    animation: changeImage3 6s infinite; /* Cambia cada 6 segundos */
+    animation: changeImage3 3s infinite; /* Cambia cada 6 segundos */
 }
 
 @keyframes changeImage3 {
@@ -294,13 +383,13 @@ transform: translateX(20px);
         content: url('./Img/anim_p4.png'); /* Imagen original */
     }
     51%, 100% {
-        content: url('./Img/anim_p4_open.png'); /* Imagen de reemplazo */
+        content: url('./Img/anim_p4_open..png'); /* Imagen de reemplazo */
     }
 }
 
 /* Animación de cambio de la cuarta imagen */
 .anim_ab4 {
-    animation: changeImage4 7s infinite; /* Cambia cada 7 segundos */
+    animation: changeImage4 5s infinite; /* Cambia cada 7 segundos */
 }
 
 @keyframes changeImage4 {
@@ -354,12 +443,15 @@ transform: translateX(20px);
 .capsule-text {
     display: flex;
     flex-direction: column; /* Asegura que el título y el subtítulo estén apilados */
+    text-decoration: none;
 }
 
 .capsule-title {
     font-size: 18px;
     font-weight: bold;
     margin: 0; /* Elimina el margen para un mejor ajuste */
+    text-decoration: none;
+    
 }
 
 .capsule-subtitle {
