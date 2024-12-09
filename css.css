@@ -273,7 +273,7 @@ body {
   /* --- Para pantallas de móviles (menos de 768px) --- */
 @media screen and (max-width: 768px) {
   .titleP {
-    top: 20%;           /* Ajustamos la distancia superior para móviles */
+    top: 40%;           /* Ajustamos la distancia superior para móviles */
     width: 80%;         /* Reducimos el tamaño de la imagen para móviles */
     max-width: 300px;   /* Limitamos el tamaño máximo de la imagen */
   }
