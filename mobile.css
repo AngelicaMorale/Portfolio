@@ -105,7 +105,8 @@ body {
 }
 
 .text_descrption {
-    font-family: 'Aileron SemiBold';
+    font-family: 'Aileron Regular';
+    
     height: 8px;
     font-size: 16px;
 }
@@ -146,6 +147,7 @@ body {
     width: 20px; /* Tamaño del icono */
     height: 20px;
     margin-right: 8px; /* Espacio entre el icono y el texto */
+    font-family: 'Aileron SemiBold';
 }
 
 
@@ -281,7 +283,7 @@ body {
     font-weight: bold;
     margin: 0; /* Elimina el margen para un mejor ajuste */
     text-decoration: none;
-    font-family: 'Aileron SemiBold';
+    font-family: 'Aileron Bold';
     text-align: left;
     
 }
