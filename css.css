@@ -282,7 +282,7 @@ body {
 /* --- Para pantallas más grandes como tablets (hasta 1024px) --- */
 @media screen and (max-width: 1024px) {
   .titleP {
-    top: 22%;           /* Ajustamos la distancia superior para tablets */
+    top: 40%;           /* Ajustamos la distancia superior para tablets */
     width: 90%;         /* Ajustamos el tamaño para tablets */
     max-width: 350px;   /* Ajustamos el tamaño máximo de la imagen */
   }
