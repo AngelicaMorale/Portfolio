@@ -297,7 +297,7 @@ body {
   .Anim3 {
     position: absolute; /* Independencia de otros elementos */
     top: 5em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-    left: 17em;          /* Centra horizontalmente */
+    left: 27%;          /* Centra horizontalmente */
     transform: translateX(-50%); /* Ajusta al centro exacto */
     z-index: 1;         /* Aparece detrás de .titleP */
     opacity: 0.8;       /* Opcional: transparencia */
@@ -349,17 +349,6 @@ body {
         }
       }
     
-      .Anim3 {
-    position: absolute; /* Independencia de otros elementos */
-    top: 100px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-    left: 27%;          /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajusta al centro exacto */
-    z-index: 1;         /* Aparece detrás de .titleP */
-    opacity: 0.8;       /* Opcional: transparencia */
-    animation: slideAnimation3 4s ease-in-out infinite;
-    max-width: 1.5%;
-    
-  }
   
   
      /* Define la animación con @keyframes */
