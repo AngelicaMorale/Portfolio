@@ -276,6 +276,7 @@ body {
     top: 40%;           /* Ajustamos la distancia superior para móviles */
     width: 80%;         /* Reducimos el tamaño de la imagen para móviles */
     max-width: 300px;   /* Limitamos el tamaño máximo de la imagen */
+    margin-top: 20px;
   }
 }
 
