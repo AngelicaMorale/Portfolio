@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Aileron SemiBold';
+    src: url('./Fonts/Aileron-SemiBold.otf') format(otf);
+    font-weight: SemiBold;
+}
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url(./Fonts/Aileron-Bold.otf); 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Aileron Regular';
+  src: url(./Fonts/Aileron-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Tan Bold';
+  src: url(./Fonts/TAN\ -\ Angleton\ Regular.ttf);
+  font-weight: normal;
+}
+
+
+:root{
+    /* Color scheme */
+    --background-color:#E7E7DF;
+    --font-titles: #A430DA;
+    --font-black-titles: #000000;
+    --color-header: #7509A7;
+    --button-color: #7354E3;
+
+    
+    /* Typography */
+    --titles-size-header: 16px;
+    --titles-size-footer: 20px;
+    --titles-size-footer-rol: 16px;
+    --font-size-heading: 24px;
+
+
+  
+    /* Spacing */
+    --spacing-unit: ;
+
+    /* Transitions */
+    --transition-duration: 0.2s;
+    --scale: 1;
+    --scale-hover: 1.1;
+  }
+
+
+
+/* Estilos básicos de la barra de navegación */
+/* Reseteamos el margen y el padding en el body para no afectar la posición */
+body {
+    margin: 0;  /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    display: flex; /* Usa Flexbox para la alineación */
+    justify-content: center; /* Centra la barra horizontalmente */
+    align-items: flex-start; /* Alinea la barra de navegación al inicio (parte superior) */
+    background-color: var(--background-color);
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;              /* Usamos Flexbox dentro de la barra */
+    justify-content: center;    /* Centra el logo horizontalmente */
+    align-items: center;        /* Centra el logo verticalmente dentro de la barra */
+    width: 100%;                /* Asegura que la barra ocupe todo el ancho disponible */
+    padding: 15px 0;            /* Espaciado superior e inferior de la barra */
+    position: absolute;         /* Asegura que la barra esté sobre la página */
+    top: 0;                     /* Fija la barra en la parte superior */
+    left: 0;                    /* Asegura que la barra ocupe todo el ancho de la página */
+    background-color: #deded6;     /* Cambia el color de fondo de la barra de navegación */
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    color: var(--font-titles);  /* Color del texto del logo */
+    font-family: 'Aileron Bold'; /* Fuente para el logo */
+    font-size: var(--titles-size-header); /* Tamaño del logo */
+    font-weight: bold;          /* Negrita en el logo */
+    text-decoration: none;      /* Elimina el subrayado del enlace */
+  }
+  
+
+  /* Estilos para el contenedor que contiene el texto */
+  .container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Asegura que los elementos dentro de .text-container estén en columna */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    margin-top: 32px;
+}
+
+.text {
+    font-family: 'Tan Bold';
+    color: var(--font-titles);
+    font-size: 40px;
+    height: 60px;
+}
+
+.text_descrption {
+    font-family: 'Aileron SemiBold';
+    height: 8px;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    color: var(--color-header);
+}
+
+.me_image {
+    margin-top: 20px;
+    max-width: 250px; /* La imagen no superará los 150px de ancho */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10%; /* Hace que la imagen tenga bordes redondeados hasta convertirse en un círculo */
+    object-fit: cover;
+    z-index: 2;   
+}
+
+/* Estilos para el botón */
+/* Estilos para el botón */
+.image-button {
+    display: flex; /* Cambia de flex a inline-block */
+    align-items: center;
+    font-family: 'Aileron SemiBold';
+    text-decoration: none;
+    justify-content: center; /* Centra el contenido (el texto y el ícono) en el botón */
+    padding: 10px 20px; /* Espaciado adecuado alrededor del texto */
+    background-color: var(--font-titles); /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima */
+    margin-top: 15px; /* Espacio entre la imagen y el botón */
+    max-width: 250px; /* Establece un ancho máximo para evitar que se expanda demasiado */
+    width: 100px; /* Ajusta el tamaño del botón al contenido */
+    text-align: center; /* Centra el texto dentro del botón */
+    margin-left: auto; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+}
+
+.button-icon {
+    width: 20px; /* Tamaño del icono */
+    height: 20px;
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+
+.anim_ab1 {
+    position: absolute; /* Posicionar la imagen detrás del contenido */
+    top: 0; /* Asegura que la imagen esté en la parte superior */
+    left: 0; /* Coloca la imagen a la izq */
+    bottom: 0;
+    z-index: 3; /* Coloca la imagen detrás del contenido */
+    max-width: 4em;
+    padding-top: 14em;
+    padding-left: 5em;
+
+  }
+
+
+  .anim_ab2 {
+    position: absolute; /* Posicionar la imagen detrás del contenido */
+    top: 0; /* Asegura que la imagen esté en la parte superior */
+    left: 0; /* Coloca la imagen a la izq */
+    bottom: 0;
+    z-index: 3; /* Coloca la imagen detrás del contenido */
+    max-width: 2em;
+    padding-top: 18em;
+    padding-left: 19em;
+
+  }
+
+  .anim_ab3 {
+    position: absolute; /* Posicionar la imagen detrás del contenido */
+    top: 0; /* Asegura que la imagen esté en la parte superior */
+    left: 0; /* Coloca la imagen a la izq */
+    bottom: 0;
+    z-index: 3; /* Coloca la imagen detrás del contenido */
+    max-width: 3em;
+    padding-top: 8em;
+    padding-left: 19em;
+
+  }
+
+  .anim_ab4 {
+    position: absolute; /* Posicionar la imagen detrás del contenido */
+    top: 0; /* Asegura que la imagen esté en la parte superior */
+    left: 0; /* Coloca la imagen a la izq */
+    bottom: 0;
+    z-index: 3; /* Coloca la imagen detrás del contenido */
+    max-width: 4em;
+    padding-top: 26em;
+    padding-left: 18em;
+
+  }
+
+
+  .text_about {
+    font-family: 'Tan Bold';
+    color: var(--font-titles);
+    font-size: 35px;
+    height: 60px;
+    margin-top: 50px;
+}
+
+
+.text_about_me {
+    font-family: 'Aileron Regular';
+    height: 8px;
+    font-size: 16px;
+    color: var(--font-black-titles);
+    margin-top: -1px;
+    padding-left:1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+   
+}
+
+.container_about {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Asegura que los elementos dentro de .text-container estén en columna */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    margin-top: -30px;
+}
+
+
+.projects {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Asegura que los elementos dentro de .text-container estén en columna */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    margin-top: -30px;
+}
+
+
+.text_work {
+
+        font-family: 'Tan Bold';
+        color: var(--font-titles);
+        font-size: 40px;
+        margin-top: 2em;  
+   
+}
+
+
+.capsule {
+    display: flex; /* Usamos flexbox para que la imagen esté a la izquierda y el texto a la derecha */
+    align-items: center; /* Alineamos verticalmente los elementos */
+    border: 2px solid var(--color-header); /* Borde de 2px con color gris claro */
+    border-radius: 18px;
+    height: 10em;
+
+}
+
+.capsule-image {
+   width: 40%;/* Espacio entre la imagen y el texto */
+   margin-left: 10px;
+    
+}
+
+.capsule-text {
+    display: flex;
+    flex-direction: column; /* Asegura que el título y el subtítulo estén apilados */
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 2px;
+    
+}
+
+.capsule-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0; /* Elimina el margen para un mejor ajuste */
+    text-decoration: none;
+    font-family: 'Aileron SemiBold';
+    text-align: left;
+    
+}
+
+.capsule-subtitle {
+    font-size: 14px;
+    color: var(--font-black-titles); /* Un color más suave para el subtítulo */
+    font-family: 'Aileron Regular';    
+    text-align: left;
+}
+
+
+
+.my-button {
+  color: var(--color-header); /* Color del texto */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  border: 2px solid var(--color-header); /* Borde de 2px con color gris claro */
+  border-radius: 18px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano cuando pasa sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  width: 6em;
+  height: 1.5em; /* Ajusta la altura para que el texto se vea centrado */
+  display: flex; /* Activa el modelo de flexbox */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  margin-top: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+.container_oky1 {
+    align-items: center; /* Centrar verticalmente la imagen y el texto */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    padding-top: 2em; /* Espaciado superior */
+    padding-left: 0.5em;
+    padding-right: 0.5%;
+    position: relative; /* Necesario para posicionar absolutamente las imágenes dentro */
+    text-align: left;
+    
+   
+  }
+  
+  .text-container_oky {
+    
+    flex-direction: column; /* Asegura que el título y párrafo estén apilados verticalmente */
+
+    position: relative; /* Necesario para que el texto esté sobre las imágenes de fondo */
+    z-index: 2; /* Asegura que el texto esté sobre la imagen de fondo */
+  }
+  
+  .text_oky {
+    font-size: 40px; /* Ajusta el tamaño del título */
+    margin: 0px;
+    font-family: 'Aileron Bold';
+    font-weight: normal;
+    color: var(--font-titles);
+  }
+  
+  .text_descrption_oky {
+    font-size: 16px; /* Ajusta el tamaño del párrafo */
+    text-align: left; /* Alinea el texto del párrafo */
+    font-family: 'Aileron Regular';
+    font-weight: normal;
+    margin-bottom: -8px;
+    color: var(--font-black-titles);
+  }
+  
+
+  .container_oky2 {
+    align-items: center; /* Centrar verticalmente la imagen y el texto */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    margin-top: 2em; /* Espaciado superior */
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FFEEF5;
+    
+    position: relative; /* Necesario para posicionar absolutamente las imágenes dentro */
+    height: 30em;
+    
+   
+  }
+
+  
+  .text_oky_3 {
+    font-size: 40px; /* Ajusta el tamaño del título */
+    margin: 0px;
+    font-family: 'Aileron Bold';
+    font-weight: normal;
+    color: var(--font-titles);
+    text-align: center;
+  }
+
+
+  .me_image_3 {
+    max-width: 25em; /* Limitar el tamaño máximo de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    z-index: 1; /* Asegura que la imagen de perfil esté encima de las imágenes de fondo */
+    border-radius: 18px; /* Bordes redondeados */
+    align-items: center;
+    margin-top: 5px;
+  }
+
+
+
+  .text_oky_subtitle
+  {
+     display: inline-block; /* El subtítulo se mostrará en línea */
+     vertical-align: left; /* Alineación vertical centrada */
+     font-size: 24px;
+     color: var(--font-titles); /* Color del texto del subtítulo */
+     font-family: 'Aileron SemiBold';
+     font-weight: normal;
+     text-align: center;
+     margin-left: 0.5em;
+     margin-right: 0.5em;
+   }
+
+
+   .text_descrption_oky_1 {
+    font-size: 16px; /* Ajusta el tamaño del párrafo */
+    text-align: center; /* Alinea el texto del párrafo */
+    font-family: 'Aileron Regular';
+    font-weight: normal;
+    margin-bottom: -8px;
+    margin-top: -0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: var(--font-black-titles);
+  }
+
+
+  .me_image_3 {
+    max-width: 25em; /* Limitar el tamaño máximo de la imagen */
+     /* Espacio entre la imagen y el texto */
+    z-index: 1; /* Asegura que la imagen de perfil esté encima de las imágenes de fondo */
+    border-radius: 18px; /* Bordes redondeados */
+    align-items: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+
+
+  
+  .oky_proto {
+    max-width: 100%;
+    display: flex; /* Usamos flexbox para centrar la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    background-color: #D7D7B5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+}
+
+.me_image_4 {
+    max-height: 100%; /* Esto asegura que la imagen no se distorsione, manteniendo su aspecto */
+    width: 80%; /* Mantiene la relación de aspecto de la imagen */
+}
+
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+

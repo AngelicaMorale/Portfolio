@@ -202,50 +202,6 @@ body {
 }
 
 
-  /* Para que el navbar siempre esté visible en todas las pantallas */
- /* Estilos específicos para la versión móvil */
-@media (max-width: 768px) {
-
-  /* Ocultamos los menús desplegables, el resume y el switch en móviles */
-  .dropdown, #resume, .switch-container {
-    display: none;
-  }
-
-  /* Mostramos el logo */
-  .logo {
-    display: block;
-  }
-
-  /* Ajustamos los nav-links para que estén apilados verticalmente */
-  .nav-links {
-    display: flex;
-    flex-direction: column; /* Apilamos los enlaces */
-    width: 100%; /* Aseguramos que los enlaces ocupen todo el ancho */
-    gap: 10px; /* Espacio entre los enlaces */
-    align-items: center; /* Centra los enlaces */
-  }
-
-  /* Estilizamos los enlaces de navegación para la versión móvil */
-  .nav-links a {
-    padding: 10px 0;
-    text-align: center; /* Centra el texto */
-    width: 100%; /* Hacemos que cada enlace ocupe todo el ancho */
-    flex-direction: column; /* Apilamos los enlaces */
-  }
-
-  /* Opcional: Cambiar el color del texto cuando se pasa el ratón por encima en móvil */
-  .nav-links a:hover {
-    color: var(--button-color); /* Cambiar color de texto al pasar el ratón */
-  }
-}
-
-  
-
-
-
-
-
-
 
   
   /* Ejemplo de CSS para tu clase .AnimP */
@@ -270,25 +226,6 @@ body {
     max-width: 800px;    /* Limitamos el tamaño máximo de la imagen */
   }
   
-  /* --- Para pantallas de móviles (menos de 768px) --- */
-@media screen and (max-width: 768px) {
-  .titleP {
-    top: 40%;           /* Ajustamos la distancia superior para móviles */
-    width: 80%;         /* Reducimos el tamaño de la imagen para móviles */
-    max-width: 300px;   /* Limitamos el tamaño máximo de la imagen */
-    margin-top: 20px;
-  }
-}
-
-/* --- Para pantallas más grandes como tablets (hasta 1024px) --- */
-@media screen and (max-width: 1024px) {
-  .titleP {
-    top: 40%;           /* Ajustamos la distancia superior para tablets */
-    width: 90%;         /* Ajustamos el tamaño para tablets */
-    max-width: 350px;   /* Ajustamos el tamaño máximo de la imagen */
-  }
-}
-
 
 
 

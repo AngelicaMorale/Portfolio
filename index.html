@@ -123,5 +123,32 @@
 
 
 
+<script>
+  // Función para redirigir según el tamaño de la pantalla
+  function checkScreenSize() {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    // Si estamos en la versión móvil y no hemos redirigido aún, redirigimos
+    if (isMobile && !localStorage.getItem("redirectedToMobile")) {
+      localStorage.setItem("redirectedToMobile", "true");
+      window.location.href = 'mobile.html';  // URL de tu página móvil
+    }
+
+    // Si estamos en una pantalla de escritorio, podemos borrar la bandera de la redirección
+    if (!isMobile && localStorage.getItem("redirectedToMobile")) {
+      localStorage.removeItem("redirectedToMobile");
+    }
+  }
+
+  // Ejecutar la función al cargar la página y al redimensionar la ventana
+  window.onload = checkScreenSize;
+  window.onresize = checkScreenSize; // Detectar cuando el tamaño de la ventana cambie
+</script>
+
+
+
+
+
+
 
 </html>
