@@ -216,14 +216,14 @@ body {
 
   .titleP {
     position: absolute; /* Independencia de otros elementos */
-    top: 70%;           /* Mueve este elemento hacia abajo desde el contenedor */
-    left: 51.5%;          /* Centra horizontalmente */
+    top: 60%;           /* Mueve este elemento hacia abajo desde el contenedor */
+    left: 50%;          /* Centra horizontalmente */
     transform: translateX(-50%); /* Ajusta al centro exacto */
     z-index: 2;         /* Se coloca sobre .anim1 */
     /* El margen superior fijo se puede eliminar o hacer relativo */
     margin-top: 0;
-    width: 100%;         /* Asegura que ocupe el 100% del contenedor */
-    max-width: 800px;    /* Limitamos el tamaño máximo de la imagen */
+    width: 50em;         /* Asegura que ocupe el 100% del contenedor */
+    max-width: 50em;    /* Limitamos el tamaño máximo de la imagen */
   }
   
 
@@ -233,8 +233,8 @@ body {
   /* Animación superpuesta */
 .Anim1 {
   position: absolute; /* Independencia de otros elementos */
-  top: 100px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-  left: 28%;          /* Centra horizontalmente */
+  top: 5em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 16em;          /* Centra horizontalmente */
   transform: translateX(-50%); /* Ajusta al centro exacto */
   z-index: 1;         /* Aparece detrás de .titleP */
   opacity: 0.8;       /* Opcional: transparencia */
@@ -266,8 +266,8 @@ body {
 
 .Anim2 {
   position: absolute; /* Independencia de otros elementos */
-  top: 100px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-  left: 26%;          /* Centra horizontalmente */
+  top: 5em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 16em;          /* Centra horizontalmente */
   transform: translateX(-50%); /* Ajusta al centro exacto */
   z-index: 1;         /* Aparece detrás de .titleP */
   opacity: 0.8;       /* Opcional: transparencia */
@@ -296,8 +296,8 @@ body {
 
   .Anim3 {
     position: absolute; /* Independencia de otros elementos */
-    top: 100px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-    left: 27%;          /* Centra horizontalmente */
+    top: 5em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+    left: 17em;          /* Centra horizontalmente */
     transform: translateX(-50%); /* Ajusta al centro exacto */
     z-index: 1;         /* Aparece detrás de .titleP */
     opacity: 0.8;       /* Opcional: transparencia */
@@ -326,8 +326,8 @@ body {
 
     .Anim4 {
       position: absolute; /* Independencia de otros elementos */
-      top: 130px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-      left: 385px;          /* Centra horizontalmente */
+      top: 7em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 20%;          /* Centra horizontalmente */
       z-index: 1;         /* Aparece detrás de .titleP */
       opacity: 0.8;       /* Opcional: transparencia */
       animation: slideAnimation4 30s ease-in-out infinite;
@@ -382,9 +382,9 @@ body {
 
     /* Estilo base para el contenedor de las imágenes */
 .imagen-container {
-  width: 300px;
+  width: 30;
   height: 200px;
-  left: 1000px;
+  padding-left: 48em;
   position: relative;
   overflow: hidden; /* Oculta las imágenes fuera del contenedor */
   z-index: 1;         /* Aparece detrás de .titleP */
@@ -419,10 +419,10 @@ body {
 
 .Anim5 {
   position: absolute; /* Independencia de otros elementos */
-  top: 160px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-  left: 560px;          /* Centra horizontalmente */
+  top: 9em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 28em;          /* Centra horizontalmente */
   z-index: 1;         /* Aparece detrás de .titleP */
-  max-width: 28%;
+  max-width: 34%;
   height: 2px;
   
 }
@@ -430,8 +430,8 @@ body {
 
 .Anim6 {
   position: absolute; /* Independencia de otros elementos */
-  top: 150px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-  left: 60%;          /* Centra horizontalmente */
+  top: 8.4em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+  left: 58%;          /* Centra horizontalmente */
   z-index: 1;         /* Aparece detrás de .titleP */
   opacity: 0.8;       /* Opcional: transparencia */
   animation: slideAnimation6 20s ease-in-out infinite;
@@ -446,7 +446,7 @@ body {
       transform: translateX(0); /* Posición inicial */
     }
     50% {
-      transform: translateX(-335px); /* Mover a la izquierda */
+      transform: translateX(-18em); /* Mover a la izquierda */
     }
     100% {
       transform: translateX(0); /* Regresar a la posición original */
@@ -459,8 +459,8 @@ body {
 
   .Anim7 {
     position: absolute; /* Independencia de otros elementos */
-    top: 130px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-    left: 72.8%;          /* Centra horizontalmente */
+    top: 7.4em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+    left: 78.8%;          /* Centra horizontalmente */
     transform: translateX(-50%); /* Ajusta al centro exacto */
     z-index: 2;         /* Aparece detrás de .titleP */
     animation: slideAnimation7 4s ease-in-out infinite;
@@ -488,13 +488,63 @@ body {
 
     .Anim8 {
       position: absolute; /* Independencia de otros elementos */
-      top: 225px;         /* Mueve este elemento hacia abajo sin afectar .titleP */
-      left: 34.3%;          /* Centra horizontalmente */
+      top: 12.5em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 30.2%;          /* Centra horizontalmente */
       transform: translateX(-50%); /* Ajusta al centro exacto */
       z-index: 1;         /* Aparece detrás de .titleP */
       opacity: 0.8;       /* Opcional: transparencia */
       /*animation: slideAnimation2 8s ease-in-out infinite; */
-      max-width: 2.5%;
+      max-width: 3.5%;
+      
+    }
+
+
+
+    .Anim9 {
+      position: absolute; /* Independencia de otros elementos */
+      top: 18em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 80%;          /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta al centro exacto */
+      z-index: 1;         /* Aparece detrás de .titleP */
+      /*animation: slideAnimation2 8s ease-in-out infinite; */
+      max-width: 6%;
+      
+    }
+
+
+    .Anim10 {
+      position: absolute; /* Independencia de otros elementos */
+      top: 6em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 70%;          /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta al centro exacto */
+      z-index: 1;         /* Aparece detrás de .titleP */
+      /*animation: slideAnimation2 8s ease-in-out infinite; */
+      max-width: 1%;
+      
+    }
+
+
+    .Anim11 {
+      position: absolute; /* Independencia de otros elementos */
+      top: 11em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 17%;          /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta al centro exacto */
+      z-index: 1;         /* Aparece detrás de .titleP */
+      /*animation: slideAnimation2 8s ease-in-out infinite; */
+      max-width: 2%;
+      
+    }
+
+
+    
+    .Anim12 {
+      position: absolute; /* Independencia de otros elementos */
+      top: 14em;         /* Mueve este elemento hacia abajo sin afectar .titleP */
+      left: 22%;          /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta al centro exacto */
+      z-index: 1;         /* Aparece detrás de .titleP */
+      /*animation: slideAnimation2 8s ease-in-out infinite; */
+      max-width: 10%;
       
     }
   
