@@ -522,10 +522,10 @@ footer
   background-color: var(--color-header);
   margin-top: 20em;
   width: 100%;
-  height: 7em;
+  height: 7.14em;
   display: flex; /* Activa Flexbox */
   align-items: center; /* Centra verticalmente los divs */
-  gap: 5em;
+  gap: 20em;
   /*justify-content: space-between; /* Espacio entre los divs */
   
 }
@@ -536,7 +536,7 @@ footer
   font-family: 'Aileron Bold';
   font-weight: bold;
   font-size: var(--titles-size-footer);
-  height: 16px;
+  height: 10px;
 }
 
 #rol_footer
@@ -558,6 +558,8 @@ footer
 .location_one {
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea los elementos verticalmente en el centro */
+  margin-bottom: -1em;
+
 
 }
 
@@ -575,6 +577,7 @@ footer
 .socials_one {
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea los elementos verticalmente en el centro */
+  margin-bottom: -1em;
 }
 
 .icon2 {

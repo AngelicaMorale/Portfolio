@@ -115,7 +115,21 @@
 
   </footer>
 
-  <script src="script.js"></script> <!-- Enlace al archivo JavaScript externo -->
+  <script>
+  document.addEventListener("DOMContentLoaded", redirigirSiEsMovil);
+window.addEventListener("resize", redirigirSiEsMovil);
+
+function redirigirSiEsMovil() {
+    console.log("Ancho de pantalla:", window.innerWidth);
+    if (window.innerWidth <= 768) {
+        console.log("Redirigiendo a mobile.html");
+        window.location.href = "mobile.html";
+    }
+}
+
+
+</script>
+
 
 </body>
 
